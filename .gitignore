@@ -2,8 +2,8 @@
 node_modules/
 
 # WordPress コアディレクトリ
-wordpress/wp-admin/
-wordpress/wp-includes/
+# wordpress/wp-admin/
+# wordpress/wp-includes/
 
 # デフォルトテーマ
 # wordpress/wp-content/themes/twenty*/
