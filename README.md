@@ -24,6 +24,7 @@ npm install を実行すれば、volta がインストールされる。
    - VSCode 上もしくは、PC デフォルトかお好みのターミナルを起動
      - VSCode(shift + ctrl + ^)で起動
    - wordpress-dev-tools ディレクトリまで移動
+   - cd wordpress-dev-tools
 2. npm install
 3. docker をインストール（未実施の場合、インストール済みスキップ）
    - mac:(https://docs.docker.com/desktop/setup/install/mac-install/)
