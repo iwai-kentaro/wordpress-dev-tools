@@ -40,7 +40,7 @@ npm install を実行すれば、volta がインストールされる。
 
 ## docker-compose.yml
 
-- ./wordpress/wp-content/{デフォルトは my、ここに任意のファイル名を入れてください。}/my:/var/www/html/wp-content/themes/{デフォルトは my、ここに任意のファイル名を入れてください。}
+- ./wordpress/wp-content/{デフォルトは my-themes、ここに任意のファイル名を入れてください。}/my-themes:/var/www/html/wp-content/themes/{デフォルトは my-themes、ここに任意のファイル名を入れてください。}
 
 ## ファイル名を変更した場合（デフォルトは my-themes）
 
