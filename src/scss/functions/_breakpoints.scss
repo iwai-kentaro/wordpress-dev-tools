@@ -1,0 +1,23 @@
+@use 'sass:map';
+
+// 1. ブレイクポイントの設定
+$breakpoints: (
+  'sp': 375px,
+  'tab': 768px,
+  'tab-l': 1024px,
+  'pc': 1200px,
+);
+
+@mixin mq($name) {
+  @media only screen and (min-width: #{map.get($breakpoints, $name)}) {
+    @content;
+  }
+}
+
+// 3. 使用例
+.my-class {
+  font-size: 16px;
+  @include mq(sp) {
+    font-size: 24px;
+  }
+}

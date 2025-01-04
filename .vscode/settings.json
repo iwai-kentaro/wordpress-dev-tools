@@ -1,0 +1,9 @@
+{
+    "cSpell.words": [
+        "browsersync"
+    ],
+    "search.exclude": {
+        "**/README.md": true
+    },
+    "search.useIgnoreFiles": false
+}

@@ -1,0 +1,16 @@
+@use '../functions' as *;
+
+.button {
+    background-color: #f00;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+        background-color: #d00;
+    }
+    @include mq(pc) {
+        padding: 20px 40px;
+    }
+}

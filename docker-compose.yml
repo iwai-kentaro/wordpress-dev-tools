@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  wordpress:
+    image: wordpress:latest
+    container_name: wordpress
+    ports:
+      - '8000:80'
+    environment:
+      WORDPRESS_DB_HOST: db #ホスト名は案件ごとに変更してください。
+      WORDPRESS_DB_USER: user #ホスト名は案件ごとに変更してください。
+      WORDPRESS_DB_PASSWORD: password
+      WORDPRESS_DB_NAME: wordpress
+    volumes:
+      - ./wordpress/wp-content/themes/my-themes:/var/www/html/wp-content/themes/my-themes
+
+  db:
+    image: mysql:5.7
+    container_name: wordpress-db
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: rootpassword
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:

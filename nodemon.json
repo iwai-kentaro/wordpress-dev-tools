@@ -1,0 +1,8 @@
+{
+  "watch": [
+    "wordpress/wp-content/themes/my-themes/**/*.php",
+    "wordpress/wp-content/themes/my-themes/**/*.css",
+    "wordpress/wp-content/themes/my-themes/**/*.js"
+  ],
+  "exec": "touch wordpress/wp-content/themes/my-themes/functions.php"
+}

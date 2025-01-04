@@ -1,0 +1,22 @@
+# Node.js の依存関係
+node_modules/
+
+# WordPress コアディレクトリ
+wordpress/wp-admin/
+wordpress/wp-includes/
+
+# デフォルトテーマ
+wordpress/wp-content/themes/twenty*/
+
+# アップロードファイル
+wordpress/wp-content/uploads/
+
+# キャッシュファイル
+wordpress/wp-content/cache/
+
+# デバッグログ
+wordpress/debug.log
+
+# その他
+*.log
+*.tmp

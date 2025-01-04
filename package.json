@@ -1,0 +1,47 @@
+{
+  "name": "wordpress",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all --parallel watch:sass watch:js browsersync compress:images",
+    "build:sass": "sass src/scss/style.scss:wordpress/wp-content/themes/my-themes/assets/css/style.css --style=compressed --source-map",
+    "build:js": "webpack",
+    "build": "npm run build:sass && npm run build:js",
+    "watch:sass": "sass --watch src/scss/style.scss:wordpress/wp-content/themes/my-themes/assets/css/style.css --source-map",
+    "watch:js": "webpack --watch",
+    "watch:php": "nodemon --watch wordpress/wp-content/themes/my-themes --ext php --exec \"docker cp wordpress/wp-content/themes/my-themes wordpress:/var/www/html/wp-content/themes/\"",
+    "browsersync": "node browsersync.js",
+    "compress:images": "node watch-images.js",
+    "postinstall": "node setup.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "babel-plugin-minify-dead-code-elimination": "^0.5.2",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "browser-sync": "^3.0.3",
+    "chokidar-cli": "^3.0.0",
+    "esbuild": "^0.24.2",
+    "nodemon": "^3.1.9",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.83.0",
+    "sharp": "^0.33.5",
+    "svgo": "^3.3.2",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  },
+  "engines": {
+    "node": "20.18.1",
+    "npm": "10.8.2"
+  },
+  "volta": {
+    "node": "20.18.1",
+    "npm": "10.8.2"
+  }
+}
