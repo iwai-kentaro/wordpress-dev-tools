@@ -3,25 +3,25 @@ version: '3.8'
 services:
   wordpress:
     image: wordpress:latest
-    container_name: wordpress
+    container_name: ${PROJECT_NAME}_wordpress
     ports:
-      - '8000:80'
+      - '${WORDPRESS_PORT}:80'
     environment:
-      WORDPRESS_DB_HOST: db #ホスト名は案件ごとに変更してください。
-      WORDPRESS_DB_USER: user #ホスト名は案件ごとに変更してください。
-      WORDPRESS_DB_PASSWORD: password
-      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: ${DB_USER}
+      WORDPRESS_DB_PASSWORD: ${DB_PASSWORD}
+      WORDPRESS_DB_NAME: ${DB_NAME}
     volumes:
-      - ./wordpress/wp-content/themes/my-themes:/var/www/html/wp-content/themes/my-themes
+      - ./wordpress:/var/www/html
 
   db:
     image: mysql:5.7
-    container_name: wordpress-db
+    container_name: ${PROJECT_NAME}_db
     environment:
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: user
-      MYSQL_PASSWORD: password
-      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
     volumes:
       - db_data:/var/lib/mysql
 

@@ -38,6 +38,10 @@ npm install を実行すれば、volta がインストールされる。
 
 ### 個別対応
 
+### WordPress 管理画面
+
+- 管理画面 URL: [http://localhost:8000/wp-admin](http://localhost:8000/wp-admin)
+
 ## docker-compose.yml
 
 - ./wordpress/wp-content/{デフォルトは my-themes、ここに任意のファイル名を入れてください。}/my-themes:/var/www/html/wp-content/themes/{デフォルトは my-themes、ここに任意のファイル名を入れてください。}
