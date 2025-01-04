@@ -2,8 +2,8 @@
 
 - git リポジトリから URL をコピーします。
 - コピーした URL からクローンを作成します。（git clone https://github.com/iwai-kentaro/wordpress-dev-tools.git）
-- ![gitのURLのコピーする場所](https://github.com/iwai-kentaro/wordpress-dev-tools.git/clone-image/copy.png)
-- ![clone方法](https://github.com/iwai-kentaro/wordpress-dev-tools.git/clone-image/git-clone.png)
+- ![gitのURLのコピーする場所](https://github.com/iwai-kentaro/wordpress-dev-tools/blob/main/clone-image/copy.png)
+- ![clone方法](https://github.com/iwai-kentaro/wordpress-dev-tools/blob/main/clone-image/git-clone.png)
 
 ## 環境構築手順
 
