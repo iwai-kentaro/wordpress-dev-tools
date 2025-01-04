@@ -1,8 +1,9 @@
 ## 環境構築手順
 
 このプロジェクトでは Volta を使用して Node.js と npm のバージョンを管理しています。
+npm install を実行すれば、volta がインストールされる。
 
-### 必要なツール(npm install で自動で実行されます。)
+### インストールされる環境(npm install で自動で実行されます。)
 
 - [Volta](https://volta.sh/)
 - node:v20.18.1
@@ -12,11 +13,28 @@
 
 ### セットアップ手順
 
-1. npm install
+1. ターミナルを起動
+   - VSCode 上もしくは、PC デフォルトかお好みのターミナルを起動
+     - VSCode(shift + ctrl + ^)で起動
+   - wordpress-dev-tools ディレクトリまで移動
+2. npm install
+3. docker をインストール（未実施の場合、インストール済みスキップ）
+   - mac:(https://docs.docker.com/desktop/setup/install/mac-install/)
+   - windows:(https://docs.docker.com/desktop/setup/install/windows-install/)
+4. docker を起動
+   - ターミナルで(docker compose up -d) を実行
 
 ### 環境実行
 
 1. npm run dev
+
+### 環境終了
+
+1. ctrl + c を 2 回実行
+
+### docker を終了
+
+1. docker compose down
 
 ### 個別対応
 
@@ -24,7 +42,7 @@
 
 - ./wordpress/wp-content/{デフォルトは my、ここに任意のファイル名を入れてください。}/my:/var/www/html/wp-content/themes/{デフォルトは my、ここに任意のファイル名を入れてください。}
 
-## ファイル名を変更した場合（デフォルトは my）
+## ファイル名を変更した場合（デフォルトは my-themes）
 
 - package.json の内容を変更する必要があります。
 - 上記ファイルを開きます。
