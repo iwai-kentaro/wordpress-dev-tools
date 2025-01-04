@@ -12,7 +12,7 @@ module.exports = {
     entry: entryFiles, // 動的エントリポイント
     output: {
         filename: 'script.js', // 出力ファイル名
-        path: path.resolve(__dirname, 'wordpress/wp-content/themmy-themes/assets/js'), // 出力先ディレクトリ
+        path: path.resolve(__dirname, 'wordpress/wp-content/themes/themes/my-themes/assets/js'), // 出力先ディレクトリ
     },
     mode: 'production', // 本番モード
     devtool: 'source-map', // ソースマップを有効化

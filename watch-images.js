@@ -6,8 +6,8 @@ const { optimize } = require("svgo");
 
 // 入力フォルダと出力フォルダ
 const inputFolder = "./src/images";
-const outputFolderWebP = "./wordpress/wp-content/themmy-themes/assets/images/webp";
-const outputFolderCompressed = "./wordpress/wp-content/themmy-themes/assets/images";
+const outputFolderWebP = "./wordpress/wp-content/themes/my-themes/assets/images/webp";
+const outputFolderCompressed = "./wordpress/wp-content/themes/my-themes/assets/images";
 
 // 出力フォルダを作成
 if (!fs.existsSync(outputFolderWebP)) {
