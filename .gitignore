@@ -1,3 +1,5 @@
+.env
+
 # Node.js の依存関係
 node_modules/
 
