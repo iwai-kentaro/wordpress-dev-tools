@@ -5,6 +5,10 @@
 - ![gitのURLのコピーする場所](https://github.com/iwai-kentaro/wordpress-dev-tools/blob/main/clone-image/copy.png)
 - ![clone方法](https://github.com/iwai-kentaro/wordpress-dev-tools/blob/main/clone-image/git-clone.png)
 
+- .env.example を準備しています。
+- ファイル名を.example を削除して使用してください。
+- 内容を使用しても構いませんが、基本的にはそのまま使えます。
+
 ## 環境構築手順
 
 このプロジェクトでは Volta を使用して Node.js と npm のバージョンを管理しています。
